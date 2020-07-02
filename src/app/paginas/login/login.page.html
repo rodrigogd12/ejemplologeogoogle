@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<!-- <img class="icon" src="/assets/icon/cerveza.svg" > -->
+
+<ion-item>
+  <ion-label position="floating">Correo Electronico</ion-label>
+  <ion-input required #email type="text"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating">Password</ion-label>
+  <ion-input required #password type="password"></ion-input>
+</ion-item>
+
+<!-- <!-- boton de login 
+<ion-button (click)="loginClick(email, password)" color="dark" expand="block" shape="round" class="top-20">
+Iniciar Sesion
+</ion-button> -->
+
+<ion-row>
+  <ion-col>
+    <ion-button type="submit" (click)="loginClick(email, password)" color="dark" expand="block" shape="round" class="top-20">
+      Login
+    </ion-button>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+    <p class="ion-text-end">
+      <a routerLink="/forgot-password">Se te olvidó tu contraseña? </a>
+    </p>
+  </ion-col>
+</ion-row>
+
+<span class="center-span"> Tambien puedes: </span>
+
+<ion-button (click)="googleLoginClick()" color="danger" expand="full" shape="round" class="top-10">
+  <ion-icon slot="start" name="logo-google"></ion-icon>
+  Sesion con Google
+  </ion-button>
+
+<ion-button (click)="facebookLoginClick()" color="primary" expand="full" shape="round" class="top-40">
+<ion-icon slot="start" name="logo-facebook"></ion-icon>Sesion con Facebook
+</ion-button>
+
+<ion-row>
+  <ion-col>
+    <p class="ion-text-center">
+      <a routerLink="/register">Create una Cuenta </a>
+    </p>
+  </ion-col>
+</ion-row>
+</ion-content>

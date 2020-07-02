@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "login-9d4ff": {
+      "hosting": {
+        "app": [
+          "login-9d4ff"
+        ]
+      }
+    }
+  }
+}
